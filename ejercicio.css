@@ -133,3 +133,7 @@ button {
   transition:800ms ease all;
 }
 
+.carrusel {
+  display: flex;
+  justify-content:center;
+}
