@@ -1,42 +1,52 @@
 body{
-    background: white;
+
+  background: white;
+
+}
+
+header {
+  background:rgb(0,0,0);
+  width: 100%;
+  margin: 0px;
+  z-index: 5px;
+  display: flex;
+  justify-content:space-between;
 }
 
 
-header {
-    background:rgb(0,0,0);
-    width: 100%;
-    margin: 0px;
-    position: fixed;
-    z-index: 5px;
-    display: flex;
-    justify-content:space-between;
-  }
+.container {
+  display: grid;
+  grid-template-columns: minmax( auto, 240px ) auto;
+  grid-template-rows: 100px auto 100px;
+  max-width: 960px;
+  margin: 0 auto;
+}
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 nav ul li a {
-    display: block; 
-    padding: 20px;
-    color: whitesmoke;
-    text-decoration: none;
+  display: block; 
+  padding: 20px;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 nav ul {
-    list-style: none;
-    overflow: hidden; 
-  }
-
-  nav ul li:hover {
-    background: #800040;
+  list-style: none;
+  overflow: hidden; 
+}
+nav ul li:hover {
+  background: #800040;
 }
 
 nav ul li {
-    float: right;
+  float: left;
+  text-align: right;
 }
 
 .frame {
@@ -48,6 +58,7 @@ nav ul li {
 button {
   margin: 20px;
 }
+
 .custom-btn {
   width: 130px;
   height: 40px;
@@ -61,26 +72,28 @@ button {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
 }
 
 .btn-5 {
-  width: 130px;
-  height: 40px;
-  line-height: 42px;
-  padding: 0;
-  border: none;
-  background: rgb(255,27,0);
-background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+ width: 130px;
+ height: 40px;
+ line-height: 42px;
+ padding: 0;
+ border: none;
+ background: rgb(255,27,0);
+ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
 }
+
 .btn-5:hover {
   color: #f0094a;
   background: transparent;
-   box-shadow:none;
+  box-shadow:none;
 }
+
 .btn-5:before,
 .btn-5:after{
   content:'';
@@ -96,6 +109,7 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
    4px 4px 5px 0px #0002;
   transition:400ms ease all;
 }
+
 .btn-5:after{
   right:inherit;
   top:inherit;
